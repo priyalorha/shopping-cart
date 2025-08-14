@@ -1,0 +1,32 @@
+{
+  "fruits": [
+    {
+      "name": "apple",
+      "price": 0.35
+    },
+    {
+      "name": "banana",
+      "price": 0.20
+    },
+    {
+      "name": "melon",
+      "price": 0.50,
+      "type": "BOGO",
+      "offer": {
+        "type": "BOGO",
+        "buy": 1,
+        "free": 1
+      }
+    },
+    {
+      "name": "lime",
+      "price": 0.15,
+      "type": "ThreeForTwo",
+      "offer": {
+        "type": "ThreeForTwo",
+        "buy": 3,
+        "payFor": 2
+      }
+    }
+  ]
+}
