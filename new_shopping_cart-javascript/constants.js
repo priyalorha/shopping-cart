@@ -1,0 +1,1 @@
+export const validFruits = ['lime', 'banana', 'melon', 'apple']
