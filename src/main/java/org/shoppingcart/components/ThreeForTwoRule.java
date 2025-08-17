@@ -18,6 +18,6 @@ public class ThreeForTwoRule implements PricingRule{
         if (unitPrice < 0) {
             throw new IllegalArgumentException("Unit price cannot be negative");
         }
-        return ( (int)(quantity / 3) * 2 + quantity % 3) * unitPrice;
+        return ( (double) (quantity / 3) * 2  + quantity % 3) * unitPrice;
     }
 }
