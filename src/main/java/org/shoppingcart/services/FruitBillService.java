@@ -67,7 +67,7 @@ public class FruitBillService {
         pricedFruit.setOffer(fruit.getOfferType());
         double chargedAmount = calculateChargedAmount(pricedFruit);
         pricedFruit.setCharged(chargedAmount);
-        pricedFruit.setAvgPrice(pricedFruit.getCharged()/pricedFruit.getUnitPrice());
+        pricedFruit.setAvgPrice(pricedFruit.getCharged()/pricedFruit.getQuantity());
 
 
         return pricedFruit;
@@ -102,6 +102,7 @@ public class FruitBillService {
         response.setFruits(fruitPrices);
         response.setTotalQuantity(totalQuantity);
         response.setTotalPrice(totalPrice);
+
         return response;
     }
 
