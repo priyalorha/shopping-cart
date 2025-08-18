@@ -5,7 +5,7 @@ dotenv.config();
 
 export const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: process.env.SQLITE_STORAGE || "../database.sqlite",
+  storage: process.env.SQLITE_STORAGE || "./db/database.sqlite",
   logging: false, // set true to see SQL logs
 });
 
