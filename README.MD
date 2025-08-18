@@ -1,56 +1,7 @@
-# 🛒 Fruit Cart System
-
-A multi-component project that demonstrates a complete fruit cart system with:
-
-1. **Java Backend** → A rule engine to compute fruit prices (calculator style, no storage)
-2. **JavaScript API** → Exposes endpoints to manage users, add items to cart, generate bills, and handle authorization
-3. **Python Scripts** → Data generation and analysis using Faker and data science libraries
-
----
-
----
-CODE FLOW
-```mermaid
-sequenceDiagram
-    participant U as 🧑 User / Frontend
-    participant JS as 🟨 JavaScript API
-    participant DB as 🗄 Database
-    participant JBE as 🟦 Java Backend (Fruit Calculator)
-    participant PY as 🐍 Python Analytics Tool
-
-%% User adds fruits
-    U->>JS: Add fruit to cart (POST /cart/add)
-    JS->>DB: Save cart items
-
-%% Checkout process
-    U->>JS: Checkout request (GET /cart/bill)
-    JS->>DB: Fetch cart items
-    JS->>JBE: Send cart items for price calculation
-    JBE-->>JS: Return total price with discount rules
-    JS->>DB: Save generated bill
-    JS-->>U: Return bill details (JSON/HTML)
-
-%% Analytics (async)
-    PY->>DB: Read transaction & cart data
-    PY-->>PY: Perform analysis (EDA, reports, trends)
-
-
-```
-
-
-## 📌 Overview
-
-This system simulates a fruit shopping cart with price computation, billing, and analytics:
-
-- The **Java backend** handles fruit price calculation using discount rules (e.g., Buy-One-Get-One, Three-for-Two, No Discount).
-- The **JavaScript API** provides endpoints for creating users, managing carts, and generating bills with proper authentication.
-- The **Python scripts** are used to generate dummy data and perform analysis for insights and reporting.
-
 <a name="readme-top"></a>
 <br />
 
 <div align="center">
-
 <h3 align="center">Shopping Cart</h3>
 
   <p align="center">
@@ -92,11 +43,7 @@ Shopping Api with Pricing Calculation Engine
 
 ## About The Project
 
-Sample Shopping cart Project integrated with Java Pricing calcuation engine using gRPC interface
-
-
-
-
+Sample Shopping cart Project integrated with Java Pricing calcuation engine 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,26 +52,95 @@ Sample Shopping cart Project integrated with Java Pricing calcuation engine usin
 * [![Java][Java]][Java-url]
 * [![Node.js][Node.js]][Nodejs-url]
 * [![Python][Python]][Python-url]
-* [![gRPC][gRPC]][gRPC-url]
+* [![gRPC][gRPC]][gRPC-url] (Good to be Implemented)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Process Flow
+## Developed Process Flow
 
 ```mermaid
 sequenceDiagram
-    participant User
-    participant NodejsAPI as Node.js API
-    participant gRPC as gRPC Interface
-    participant JavaEngine as Java Engine
+    participant U as 🧑 User / Frontend
+    participant JS as 🟨 JavaScript API
+    participant DB as 🗄 Database
+    participant JBE as 🟦 Java Backend (Fruit Calculator)
+    participant PY as 🐍 Python Analytics Tool
 
-    User->>NodejsAPI: Submit Cart
-    NodejsAPI->>gRPC: Forward Item Details
-    gRPC->>JavaEngine: Calculate Totals
-    JavaEngine-->>gRPC: Totals Calculated
-    gRPC-->>NodejsAPI: Return Totals
-    NodejsAPI->>NodejsAPI: Update Shopping Cart Order in DB
-    NodejsAPI-->>User: Respond with Order ID & Total
+%% User adds fruits
+    U->>JS: Add fruit to cart (POST /cart/add)
+    JS->>DB: Save cart items
+
+%% Checkout process
+    U->>JS: Checkout request (GET /cart/bill)
+    JS->>DB: Fetch cart items
+    JS->>JBE: Send cart items for price calculation
+    JBE-->>JS: Return total price with discount rules
+    JS->>DB: Save generated bill
+    JS-->>U: Return bill details (JSON/HTML)
+
+%% Analytics (async)
+    PY->>DB: Read transaction & cart data
+    PY-->>PY: Perform analysis (EDA, reports, trends)
+
+```
+
+
+
+## Recommended Process Flow 
+
+### Add Cart
+
+
+
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant NodeAPI as Node.js API
+    participant DB as Database
+    participant JavaEngine as Java Engine (gRPC)
+
+    User->>NodeAPI: Call addCart(items)
+    NodeAPI->>DB: Insert items into DB
+    NodeAPI->>JavaEngine: gRPC call - Calculate prices
+    JavaEngine-->>NodeAPI: Return items with calculated prices
+    NodeAPI-->>User: Response with items & prices
+
+```
+
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant NodeAPI as Node.js API
+    participant DB as Database
+    participant JavaEngine as Java Engine (gRPC)
+
+    User->>NodeAPI: Call viewCart()
+    NodeAPI->>DB: Fetch cart items
+    DB-->>NodeAPI: Return cart items
+    NodeAPI->>JavaEngine: gRPC call - Calculate prices
+    JavaEngine-->>NodeAPI: Return items with calculated prices
+    NodeAPI-->>User: Response with items & prices
+
+```
+
+### PlaceOrder
+
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant NodeAPI as Node.js API
+    participant DB as Database
+    participant JavaEngine as Java Engine (gRPC)
+
+    User->>NodeAPI: Call viewCart()
+    NodeAPI->>DB: Fetch cart items
+    DB-->>NodeAPI: Return cart items
+    NodeAPI->>JavaEngine: gRPC call - Calculate prices
+    JavaEngine-->>NodeAPI: Return items with calculated prices
+    NodeAPI->>DB: Insert into Orders Table
+    DB-->>NodeAPI: Return OrderId
+    NodeAPI-->>User: Response with OrderId, items & prices
+
 ```
 
 
@@ -151,15 +167,15 @@ This is an example of how to list things you need to use the software and how to
 * OpenJdk v17
 * Nodejs v22
 * Python v3.10+
-## Running the Application
+## Running the Java Application
 
 ```bash
-java -jar .\cart-1.0-SNAPSHOT.jar
+java -jar .\shopping-cart-api-0.0.1-SNAPSHOT.jar
 ```
 
-gRPC server will be running on port 50051
+Server will run on PORT 8080
 
-### Step 2 -  Run Nodejs Api
+### Run Nodejs Api
 
 open terminal and Navigate to `shoppint_cart` directory
 
@@ -173,9 +189,357 @@ npm install
 npm start
 ```
 
-Node `server.js` will be running on port 3000
+Node `app.js` will be running on port 3007
 
-### Step 3 - Post Order
+### Step 3 - API 
+
+
+
+You can explore the API docs here:
+
+👉 [Swagger UI](https://editor-next.swagger.io/?_gl=1*isw2o1*_gcl_au*MTQ4NDY1NDkyNS4xNzU1NTI2OTM1)
+
+
+
+## OpenAPI Spec
+
+``` YAM
+openapi: 3.0.0
+info:
+  title: Shopping Cart API
+  version: 1.0.0
+  description: API documentation for Shopping Cart service.
+servers:
+  - url: http://localhost:3007/api/v1
+paths:
+  /auth/login:
+    post:
+      summary: User login
+      description: Authenticates a user and returns a JWT token.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: priya.lorha@gmail.com
+                password:
+                  type: string
+                  format: password
+                  example: user@123
+      responses:
+        "200":
+          description: Successful login
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  token:
+                    type: string
+                    example: >-
+                      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+                  user:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      name:
+                        type: string
+                        example: Priya Lorha
+                      email:
+                        type: string
+                        example: priya.lorha@gmail.com
+                      role:
+                        type: string
+                        example: customer
+        "401":
+          description: Invalid credentials
+  /auth/me:
+    get:
+      summary: Get logged-in user
+      description: Returns the details of the currently authenticated user.
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: User details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: Priya Lorha
+                  email:
+                    type: string
+                    example: priya.lorha@gmail.com
+                  role:
+                    type: string
+                    example: customer
+                  createdAt:
+                    type: string
+                    format: date-time
+                  updatedAt:
+                    type: string
+                    format: date-time
+        "401":
+          description: Unauthorized
+  /cart/:
+    post:
+      summary: Create a new cart
+      description: Creates a new shopping cart for the logged-in user. If the user already has an active cart, the existing cart ID is returned instead.
+      tags:
+        - Cart
+      security:
+        - bearerAuth: []
+        - cookieAuth: []
+      responses:
+        "201":
+          description: Cart created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  createdAt:
+                    type: string
+                    format: date-time
+                  updatedAt:
+                    type: string
+                    format: date-time
+                  id:
+                    type: integer
+                  userId:
+                    type: integer
+                  status:
+                    type: string
+                    example: OPEN
+                  total:
+                    type: number
+                  quantity:
+                    type: integer
+        "409":
+          description: User already has an active cart
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  cartId:
+                    type: integer
+        "401":
+          description: Unauthorized - Invalid or missing token
+  /cart/{cartId}/items:
+    post:
+      summary: Add items to cart
+      description: Adds one or more fruit items into an existing cart.
+      tags:
+        - Cart
+      parameters:
+        - name: cartId
+          in: path
+          required: true
+          description: The ID of the cart
+          schema:
+            type: integer
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                items:
+                  type: array
+                  items:
+                    type: string
+                    enum: [apple, banana, lime, melon]
+              example:
+                items: ["apple", "apple", "banana", "apple"]
+      responses:
+        "200":
+          description: Items added successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        name:
+                          type: string
+                        offerType:
+                          type: string
+                        price:
+                          type: number
+                        quantity:
+                          type: integer
+                        avgPrice:
+                          type: number
+                        charged:
+                          type: number
+                        userId:
+                          type: integer
+                        cartId:
+                          type: integer
+                        createdAt:
+                          type: string
+                          format: date-time
+                        updatedAt:
+                          type: string
+                          format: date-time
+                  cart:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                      total:
+                        type: number
+                      quantity:
+                        type: integer
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: object
+  /cart/{cartId}/generateBill:
+    post:
+      summary: Generate a bill for a cart
+      description: Generates the final bill for the cart, closes the cart, and prevents further changes.
+      tags:
+        - Cart
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: cartId
+          required: true
+          schema:
+            type: integer
+          description: ID of the cart to bill
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                items:
+                  type: array
+                  items:
+                    type: string
+                  example: ["apple", "banana", "apple"]
+      responses:
+        "200":
+          description: Successfully generated bill
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                        userId:
+                          type: integer
+                        cartId:
+                          type: integer
+                        name:
+                          type: string
+                        price:
+                          type: number
+                        charged:
+                          type: number
+                        avgPrice:
+                          type: number
+                        quantity:
+                          type: integer
+                        offerType:
+                          type: string
+                        createdAt:
+                          type: string
+                          format: date-time
+                        updatedAt:
+                          type: string
+                          format: date-time
+                  grand_total:
+                    type: number
+                  total_quantity:
+                    type: integer
+        "400":
+          description: Cart is empty or invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        "404":
+          description: No active cart found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: token
+
+```
+
+
+
+### POSTMAN COLLECTION
+
+[postman collection](https://web.postman.co/workspace/f4dca942-6804-4b83-85b3-10a8cc3db5d3/collection/4640872-f533b1b4-4511-4673-89bf-cca566db9ab6?action=share&source=copy-link&creator=4640872)	
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

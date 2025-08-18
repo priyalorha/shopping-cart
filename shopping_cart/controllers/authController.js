@@ -39,6 +39,8 @@ export const login = [
         throw Errors.unauthenticated('Invalid credentials');
       }
 
+      consol.log(user)
+
       // 3. Verify password
       const isValidPassword = await bcrypt.compare(password, user.password);
       if (!isValidPassword) {

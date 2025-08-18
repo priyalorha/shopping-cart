@@ -5,140 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="194ee926-4d02-4675-af04-a8a4eaab1315" name="Changes" comment="javascript code">
-      <change afterPath="$PROJECT_DIR$/../fruit-cart/fruit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruit-cart/fruit/src/main/java/com/example/grpc/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fruit-cart/fruit/src/main/java/com/example/grpc/FruitCartServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/database.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reporting/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping_cart/db/database.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/FruitCartServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/src/proto/cart.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/subscription/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/subscription/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/subscription/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/subscription/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shopingcart/subscription/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/validation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/price_engine/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/.env.development.local" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/.env.development.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/.env.production.local" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/.env.production.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/config/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/controllers/cartController.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/controllers/cartController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/grcp/cart_service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/grcp/grcp.connections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/grcp/grcp.invocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/javabackend/retro.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/javabackend/retro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/middlewares/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/middlewares/auth.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/middlewares/error.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/middlewares/error.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/middlewares/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/middlewares/errorHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/middlewares/rateLimiter.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/middlewares/rateLimiter.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/migrations/20250816155332-create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/migrations/20250816155332-create-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/migrations/20250816155333-create-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/migrations/20250816155333-create-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/migrations/20250816155334-create-cart-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/migrations/20250816155334-create-cart-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/models/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/models/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/models/cartitem.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/models/cartitem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/routes/authRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/routes/authRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/routes/cartRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/routes/cartRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/routes/userRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/seeders/20250816160119-demo-users.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/seeders/20250816160119-demo-users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new-shopping-cart-javascript/utils/validationSchemas.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/utils/validationSchemas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/avg_price_by_product.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/avg_price_by_product.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/data_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/generate_dummy_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/generate_dummy_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/monthly_sales_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/monthly_sales_trend.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/price_distribution.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/price_distribution.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/product_performance.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/product_performance.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/quantity_by_product.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/quantity_by_product.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/quantity_vs_price.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/quantity_vs_price.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/sales_by_product.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/sales_by_product.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/test.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/data_analysis/weekly_moving_avg.png" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/data_analysis/weekly_moving_avg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/model_factories/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/model_factories/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/model_factories/model_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/model_factories/model_factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/models/CartItemModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/models/CartItemModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/models/CartModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/models/CartModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/models/UserModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/models/UserModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-analysis-python/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reporting/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/components/BOGORule.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/components/BOGORule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/components/NoDiscountRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/components/NoDiscountRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/components/PricingRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/components/PricingRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/components/ThreeForTwoRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/components/ThreeForTwoRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/controller/FruitOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/controller/FruitOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/BOGO.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/BOGO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/FruitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/FruitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/FruitDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/FruitDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/FruitPriceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/FruitPriceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/FruitResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/FruitResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/OfferDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/OfferDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/models/ThreeForTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/models/ThreeForTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/services/FruitBillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/services/FruitBillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/FruitLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/FruitLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/FruitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/FruitType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/OfferType.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/OfferType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/java/org/shoppingcart/utils/ValidationConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/java/org/shoppingcart/utils/ValidationConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/main/resources/offer.json" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/main/resources/offer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/test/java/org/shoppingcart/components/BOGORuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/test/java/org/shoppingcart/components/BOGORuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/test/java/org/shoppingcart/components/NoDiscountRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/test/java/org/shoppingcart/components/NoDiscountRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/test/java/org/shoppingcart/components/ThreeForTwoRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/test/java/org/shoppingcart/components/ThreeForTwoRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/test/java/org/shoppingcart/controller/FruitOrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/test/java/org/shoppingcart/controller/FruitOrderControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shopping-cart-price-engine-java/src/test/java/org/shoppingcart/services/FruitBillServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/price_engine/src/test/java/org/shoppingcart/services/FruitBillServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/components/BOGORule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/components/NoDiscountRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/components/PricingRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/components/ThreeForTwoRule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/controller/FruitOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/controller/FruitOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/BOGO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/Fruit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/FruitConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/FruitDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/FruitPriceDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/FruitResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/OfferDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/models/ThreeForTwo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/services/FruitBillService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/FruitLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/FruitType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/JacksonConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/OfferType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/java/org/shoppingcart/utils/ValidationConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shopingcart/src/main/resources/offer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping_cart/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping_cart/db/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/shopping_cart/db/database.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,32 +24,60 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "priyalorha"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/priyalorha/shopping-cart.git",
+    "accountId": "17c55e45-8e01-4f6a-b5a0-576788449fd7"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="31PMmgLTSB0TeqClzctpJhm9LCB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/priya/Downloads/shop&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Maven. [run].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/priya/Downloads/shop",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propDebugger"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/db" />
       <recent name="$PROJECT_DIR$/shopping-cart-price-engine-java" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn run" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="jbr-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.shoppingcart.Main" />
       <module name="shopping-cart-api" />
       <extension name="coverage">
